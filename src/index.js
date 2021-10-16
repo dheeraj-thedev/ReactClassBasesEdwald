@@ -1,12 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+
+
+import MyClassBasedHome from './Component/Home';//./Component/Home"
+
 import reportWebVitals from './reportWebVitals';
 
+
+const users= [
+  {userName:"dheeraj@gmail.com",password:"123"},
+  {userName:"edwald@gmail.com",password:"321"},
+  {userName:"don@gmail.com",password:"456"},
+  {userName:"alex@gmail.com",password:"654"}
+]
+
+
+//  {/* We will create a componenet that will have refrence to another compoenets  */}
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <MyClassBasedHome users={users}></MyClassBasedHome>
   </React.StrictMode>,
   document.getElementById('root')
 );

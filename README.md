@@ -1,3 +1,13 @@
+
+
+# after the fork and clone 
+
+    1. get into the project 
+    2. npm install
+    3. npx start 
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
