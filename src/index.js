@@ -4,22 +4,29 @@ import './index.css';
 
 
 import MyClassBasedHome from './Component/Home';//./Component/Home"
+import FunctionalUserNameChkr from "./Component/classBased/FunctionalComponent"
 
 import reportWebVitals from './reportWebVitals';
+import MyClassBasesExample from './Component/classBased/ClassBasedComponentExample';
 
 
 const users= [
-  {userName:"dheeraj@gmail.com",password:"123"},
-  {userName:"edwald@gmail.com",password:"321"},
-  {userName:"don@gmail.com",password:"456"},
-  {userName:"alex@gmail.com",password:"654"}
+  {userName:"dheeraj@gmail.com",password:"123",name:"dheeraj"},
+  {userName:"edwald@gmail.com",password:"321",name:"edwald"},
+  {userName:"don@gmail.com",password:"456", name:"don" },
+  {userName:"alex@gmail.com",password:"654", name:"alex"}
 ]
 
 
 //  {/* We will create a componenet that will have refrence to another compoenets  */}
 ReactDOM.render(
   <React.StrictMode>
-      <MyClassBasedHome users={users}></MyClassBasedHome>
+     
+<>
+<FunctionalUserNameChkr name={"dheeraj"} usersObjs={users}></FunctionalUserNameChkr>
+
+</>
+     
   </React.StrictMode>,
   document.getElementById('root')
 );
